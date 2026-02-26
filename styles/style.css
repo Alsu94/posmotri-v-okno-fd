@@ -120,9 +120,9 @@ ol {
   font-weight: 400;
   width: 100%;
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  color: #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  color: currentColor;
   appearance: none;
   cursor: pointer;
   padding-block: 2.5px;
@@ -137,7 +137,7 @@ ol {
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 1px;
 }
 
@@ -149,14 +149,14 @@ ol {
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 1px;
 }
 
 .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  background-color: #fff;
+  background-color: currentColor;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -167,7 +167,7 @@ ol {
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 1px;
 }
 
@@ -177,8 +177,8 @@ ol {
 
 .button {
   background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: currentColor;
+  border: 1px solid currentColor;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -195,7 +195,7 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 1px;
 }
 
@@ -220,7 +220,7 @@ ol {
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -230,6 +230,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 399px;
 }
 
 .content__list-item {
@@ -239,7 +240,7 @@ ol {
 .content__card-link {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: currentColor;
 }
 
 .content__card-link_current {
@@ -251,7 +252,7 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 1px;
 }
 
@@ -278,7 +279,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
